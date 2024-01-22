@@ -71,6 +71,11 @@
     width: 90px;
     height: auto;
     padding-top: 10px;
+    transition: all 0.3s;
+}
+
+.nav2 .lista1 .lista-elemento a img:hover{
+    transform: scale(1.1);
 }
 
 .nav2 .lista2{
@@ -89,4 +94,11 @@
     font-weight: 500;
     text-decoration: none;
     color: #001279;
+    transition: all 0.3s;
+}
+
+.nav2 .lista2 .lista-elemento a:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+    padding-bottom: 3px;
 }
