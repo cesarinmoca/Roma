@@ -7,6 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Blue Nav*/
 .header .nav{
     background-color: #001279;
     height: 42px;
@@ -20,10 +21,8 @@
 
 .header .nav .lista1,
 .header .nav .lista2{
-    text-decoration: none;
     list-style: none;
     display: flex;
-    color: white;
     align-items: center;
 }
 
@@ -32,9 +31,62 @@
     padding: 0 15px;
 }
 
-.header .nav .lista2 .lista-elemento img{
+.header .nav .lista1 .lista-elemento a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.header .nav .lista1 .lista-elemento a:hover{
+    color: #ffcc00;
+}
+
+.header .nav .lista2 .lista-elemento a img{
     filter: grayscale(100%) brightness(0) invert(1);
     height: 25px;
     width: auto;
     padding-top: 3px;
+    transition: all 0.3s;
+}
+
+.header .nav .lista2 .lista-elemento a img:hover{
+    transform: scale(1.3);
+}
+
+/*White Nav*/
+.nav2{
+    display: flex;
+    height: 75px;
+    border: 1px solid black;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.nav2 .lista1{
+    list-style: none;
+}
+
+.nav2 .lista1 .lista-elemento a img{
+    width: 90px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.nav2 .lista2{
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 .lista2 .lista-elemento{
+    padding-left: 30px;
+}
+
+.nav2 .lista2 .lista-elemento a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #001279;
 }
