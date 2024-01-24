@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /*Blue Nav*/
@@ -14,9 +14,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0 8.5%;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header .nav .lista1,
@@ -61,6 +62,7 @@
     border: 1px solid black;
     padding: 0 10%;
     justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav2 .lista1{
@@ -81,7 +83,7 @@
 .nav2 .lista2{
     display: flex;
     list-style: none;
-    font-size: 1rem;
+    font-size: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -91,7 +93,7 @@
 }
 
 .nav2 .lista2 .lista-elemento a{
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     color: #001279;
     transition: all 0.3s;
@@ -101,4 +103,52 @@
     color: #ffcc00;
     text-decoration: underline;
     padding-bottom: 3px;
+}
+
+/*Welcome*/
+.welcome{
+    font-family: 'Poppins', sans-serif;
+}
+
+.welcome .info{
+    display: flex;
+    background-color: #0F1FC5;
+    font-weight: 500;
+    font-size: 37px;
+    padding: 175px 420px;
+    align-items: center;
+}
+
+.welcome .info .logo{
+
+}
+
+.welcome .info .logo img{
+    width: 320px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(150px);
+    animation: aparecer 1.6s forwards;
+}
+
+.welcome .info .frase{
+    color: white;
+    padding-left: 50px;
+    animation: aparecer 1.5s forwards;
+    transform: translateY(150px);
+}
+
+.welcome .info .frase p{
+    line-height: 40px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
