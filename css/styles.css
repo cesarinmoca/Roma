@@ -169,10 +169,6 @@
     width: 40%;
 }
 
-.info .info-container .left .left-texto{
-
-}
-
 .info .info-container .left .left-texto h1{
     font-weight: 600;
     font-size: 30px;
@@ -260,3 +256,76 @@
     margin: 0 0 0 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+/*Ofertas*/
+.ofertas{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ofertas .container{
+    padding: 10% 20%;
+}
+
+.ofertas .container .center{
+    border: 1px solid black;
+}
+
+.ofertas .container .center .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+.ofertas .container .center .text h1{
+    color: #0C4E94;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 80px;
+}
+
+.ofertas .container .center .text p{
+    color: #3d4459;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.ofertas .container .center .productos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.ofertas .container .center .productos .producto{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.ofertas .container .center .productos .producto img{
+    width: 150px;
+    height: auto;
+}
+
+.ofertas .container .center .productos .producto .titulo{
+    color: #04147c;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ofertas .container .center .productos .producto .descripcion{
+    color: #827f79;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.ofertas .container .center .productos .producto .precio{
+    color: #222222;
+    font-weight: 400;
+    font-size: 20px;
+}
+
